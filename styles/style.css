@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+h3,
+p {
+  font-size: 1.8rem;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #797979;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 11rem 4rem;
+}
+
+header h1 {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 3.6rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+header h2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header p {
+  max-width: 40rem;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  margin-bottom: 10rem;
+  justify-items: center;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  -ms-grid-rows: (50rem)[2];
+      grid-template-rows: repeat(2, 50rem);
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  height: 38rem;
+  width: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card p {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: 12rem;
+  position: absolute;
+  top: 0;
+  right: -7rem;
+  -webkit-transform: rotate(90deg) translateX(44%);
+          transform: rotate(90deg) translateX(44%);
+}
+
+div:nth-of-type(3n-1) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+footer {
+  min-height: 5vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1124px) {
+  main {
+    -ms-grid-rows: (50rem)[3];
+        grid-template-rows: repeat(3, 50rem);
+  }
+  div.card {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  div.card:nth-of-type(2n) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  main {
+    -ms-grid-rows: (45rem)[6];
+        grid-template-rows: repeat(6, 45rem);
+  }
+  div.card {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+/*# sourceMappingURL=style.css.map */
