@@ -48,6 +48,7 @@ header h1 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+  margin-bottom: 4rem;
 }
 
 header h2 {
